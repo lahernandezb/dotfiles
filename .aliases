@@ -1,5 +1,5 @@
 # Navigation
-
+#auto_cd is enabled
 # Listing
 alias ll='ls -al'
 
@@ -7,4 +7,5 @@ alias ll='ls -al'
 alias g='git init'
 alias gs='git status'
 alias gc='git commit -m'
+alias ga='git add .'
 
