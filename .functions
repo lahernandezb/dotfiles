@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Custom Functions
+createFolders () {
+    TARGET="/usr/share/dict/words"
+    grep "^a" $TARGET | tail -n -10 | xargs touch
+}
+
+mkcdir () {
+    mkdir -p -- "$1" &&
+    cd -P -- "$1"
+}
