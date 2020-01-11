@@ -4,6 +4,7 @@
 alias ll='ls -al'
 
 # git
-alias g='git'
+alias g='git init'
 alias gs='git status'
-alias gc= 'git commit -m'
+alias gc='git commit -m'
+
