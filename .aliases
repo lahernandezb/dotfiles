@@ -1,11 +1,14 @@
 # Navigation
-#auto_cd is enabled
+  #auto_cd is enabled
 # Listing
 alias ll='ls -al'
 
 # git
-alias g='git init'
+alias git='git init'
 alias gs='git status'
 alias gc='git commit -m'
-alias ga='git add .'
+alias ga='git add'
+alias gb='git branch'
+alias gd='git diff'
+alias gr='git reset --hard origin/master'
 

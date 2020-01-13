@@ -18,7 +18,8 @@ if [ -f ~/.dotfiles/.functions ]; then
 fi
 
 precmd() {
-  gitStatus="$(git symbolic-ref --short -q HEAD 2> /dev/null)"
+  # /dev/null required to prevent error if branch is not a git repository.???
+  gitStatus="$(git symbolic-ref -q --short HEAD 2> /dev/null)"
   NEWLINE=$'\n'
 
   PROMPT="%~ %{$fg[yellow]%}${gitStatus}${NEWLINE}%{$fg[magenta]%}❯ %{$reset_color%}"
