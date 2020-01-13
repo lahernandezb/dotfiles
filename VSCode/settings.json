@@ -39,7 +39,7 @@
   "editor.letterSpacing": 0.5,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "wordWrapColumn",
   "editor.hover.delay": 500,
   "editor.renderIndentGuides": true,
   "editor.renderWhitespace": "none",
@@ -143,5 +143,6 @@
   "liveServer.settings.CustomBrowser": "firefox",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "editor.wordWrapColumn": 72
 }
