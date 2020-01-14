@@ -6,7 +6,7 @@ alias ll='ls -al'
 # git
 alias git='git init'
 alias gs='git status'
-alias gc='git commit -m'
+alias gc='git commit'
 alias ga='git add'
 alias gb='git branch'
 alias gd='git diff'
