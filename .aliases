@@ -1,5 +1,8 @@
 # Navigation
-  #auto_cd is enabled
+#auto_cd is enabled
+alias ...='../..'
+alias ....='../../..'
+
 # Listing
 alias ll='ls -Gla'
 
@@ -8,7 +11,9 @@ alias giti='git init'
 alias gs='git status'
 alias gc='git commit'
 alias ga='git add -A'
+alias gap='git add -p'
 alias gb='git branch'
+alias gcb='git checkout -b'
 alias gd='git diff'
 alias gr='git rebase'
 alias gp='git pull --rebase'
