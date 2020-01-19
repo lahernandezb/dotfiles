@@ -26,8 +26,8 @@
     "comments": "#57ff09"
   },
   "editor.rulers": [
-    80,
-    100
+    72,
+    80
   ],
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": true,
@@ -39,11 +39,11 @@
   "editor.letterSpacing": 0.5,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrap": "bounded",
   "editor.hover.delay": 500,
   "editor.renderIndentGuides": true,
   "editor.renderWhitespace": "none",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.minimap.showSlider": "always",
   "editor.autoIndent": true,
   "window.closeWhenEmpty": true,
@@ -52,6 +52,11 @@
   "editor.find.seedSearchStringFromSelection": true,
   "editor.scrollBeyondLastLine": true,
   "editor.formatOnPaste": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.wordWrapColumn": 72,
   // Terminal UI
   "terminal.integrated.fontFamily": "'Cascadia Code'",
   "terminal.integrated.fontSize": 14,
@@ -71,8 +76,8 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "editor.snippetSuggestions": "top",
-  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "bottom",
+  "emmet.showSuggestionsAsSnippets": false,
   // SASS Config
   "liveSassCompile.settings.formats": [
     {
@@ -138,11 +143,5 @@
     "nim": "nim compile --verbosity:0 --hints:off --run",
     "lisp": "sbcl --script",
     "kit": "kitc --run"
-  },
-  "editor.suggestSelection": "first",
-  "liveServer.settings.CustomBrowser": "firefox",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.wordWrapColumn": 72
+  }
 }
