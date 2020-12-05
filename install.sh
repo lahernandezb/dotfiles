@@ -18,10 +18,7 @@ cask_install() {
     fi
 }
 
-copy_configs() {
-    cp .nvimrc ~
-    cp .tmux.conf ~
-}
+
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -34,18 +31,6 @@ packages=(
     wget
     curl
     git
-    jq
-    autojump
-    python3
-    the_silver_searcher
-    fzf
-    tmate
-    highlight
-    hugo
-    vim
-    emacs-plus
-    tmux
-    neovim
     nvm
 )
 
@@ -54,9 +39,7 @@ for package in "$packages[@]"
 done
 
 languages=(
-    elixir
     go
-    ruby
 )
 
 for package in "$languages[@]"
@@ -75,25 +58,11 @@ applications=(
     caffeine
     google-chrome
     firefox
-    fantastical
-    spectacle
-    skype
-    iterm2
-    figma
-    cyberduck
     insomnia
-    flux
-    timing
-    licecap
-    atom
-    the-unarchiver
     slack
-    sketch
     docker
     spotify
     sequel-pro
-    font-source-code-pro
-    plex-media-server
 )
 
 for application in "$applications[@]"
@@ -108,18 +77,5 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | z
 nvm install stable
 nvm alias default stable
 
-# Install Neovim
 
-# Install and Move Vim Colors Stuff
-mkdir -p ~/.vim/colors
 
-# Install plug
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Install Pure
-npm install --global pure-prompt
-copy_configs
-
-# Install Spacemacs
-# git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
