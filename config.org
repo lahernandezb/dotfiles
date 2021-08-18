@@ -1,0 +1,11 @@
+** UI
+#+begin_src emacs-lisp
+(setq doom-font (font-spec :family "Iosevka SS04" :size 15 :weight 'regular)
+      doom-variable-pitch-font (font-spec :family "SF Pro Text" :size 15))
+(add-hook! rjsx-mode visual-line-mode)
+(setq doom-theme 'doom-rouge)
+#+end_src
+** Projectile
+#+begin_src emacs-lisp
+(setq projectile-project-search-path '("~/Code/"))
+#+end_src
