@@ -8,3 +8,26 @@
 #+begin_src emacs-lisp
 (setq projectile-project-search-path '("~/Code/"))
 #+end_src
+** Formating (Prettier)
+#+begin_src emacs-lisp
+(add-hook! `rjsx-mode-hook `prettier-js-mode)
+(add-hook! `web-mode-hook `prettier-js-mode)
+;; (add-hook! `scss-mode-hook `prettier-js-mode)
+
+#+end_src
+** Modeline
+#+begin_src emacs-lisp
+(use-package! doom-modeline-mode
+  :hook
+  (after-init . doom-modeline-mode)
+  :custom
+  (doom-modeline-major-mode-icon t)
+  (doom-modeline-buffer-file-name-style 'relative-from-project)
+  (doom-modeline-buffer-modification-icon t)
+  (doom-modeline-vcs-max-length 25)
+  (doom-modeline-github nil)
+  (doom-modeline-env-version t)
+  (doom-modeline-window-width-limit fill-column))
+
+
+#+end_src
